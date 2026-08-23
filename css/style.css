@@ -1,0 +1,105 @@
+body {
+    display: grid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: lightgoldenrodyellow;
+}
+
+header, main {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+nav {
+    background-color: wheat;
+    place-items: center;
+    border-radius: 10px;
+    li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 20px;
+        font-weight: bold;
+    }
+
+    li:hover {
+        background-color: greenyellow;
+    }
+}
+
+marquee {
+    background-color: red;
+    color: yellow;
+    font-size: 300%;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 10px;
+}
+
+div.logo {
+    place-self: center;
+    h1 {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    p {
+        font-size: small;
+        font-style: italic;
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    border-radius: 0px 0px 10px 10px;
+    margin: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  .card {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+
+.productos {
+    place-items: center;
+}
+
+button {
+    background-color: white;
+    font-size: large;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: yellowgreen;
+}
+
+.categorias {
+    place-items: center;
+    .card {
+        font-weight: bold;
+
+    }
+    .card:hover {
+        background-color: aquamarine;
+    }
+}
+
+.bienvenida, .categorias, .productos, .contacto {
+    place-items: center;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    padding: 10px;
+    margin: 10px;
+}
