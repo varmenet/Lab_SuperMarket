@@ -1,105 +1,246 @@
+:root {
+    --verde-principal: #168a45;
+    --verde-oscuro: #0d6331;
+    --amarillo: #ffd43b;
+    --rojo: #e63946;
+    --fondo: #f5f5f5;
+    --texto: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    display: grid;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: lightgoldenrodyellow;
-}
-
-header, main {
-    background-color: white;
+    background-color: var(--fondo);
+    color: var(--texto);
     padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
 }
 
-nav {
-    background-color: wheat;
-    place-items: center;
+header {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
     border-radius: 10px;
-    li {
-        list-style-type: none;
-        display: inline-block;
-        padding: 20px;
-        font-weight: bold;
-    }
-
-    li:hover {
-        background-color: greenyellow;
-    }
-}
-
-marquee {
-    background-color: red;
-    color: yellow;
-    font-size: 300%;
-    font-weight: bold;
-    font-style: italic;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
 div.logo {
-    place-self: center;
-    h1 {
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-    p {
-        font-size: small;
-        font-style: italic;
-    }
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-footer {
-    background-color: black;
-    color: white;
-    padding: 50px;
-    border-radius: 0px 0px 10px 10px;
-    margin: 10px;
+div.logo h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--verde-principal);
 }
+
+div.logo p {
+    font-size: small;
+    font-style: italic;
+}
+
+nav {
+    background-color: var(--verde-principal);
+    border-radius: 10px;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover, nav a:focus {
+    background-color: var(--verde-oscuro);
+}
+
+.banner-promocion {
+    background-color: var(--rojo);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    padding: 20px;
-  }
-  .card {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.card {
     background-color: white;
-    border: 1px solid black;
+    border: 2px solid var(--fondo);
     border-radius: 10px;
     padding: 20px;
     text-align: center;
-  }
-
-.productos {
-    place-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain; 
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+
+.oferta-card {
+    position: relative;
+    border-color: var(--amarillo);
+}
+
+.etiqueta-descuento {
+    background-color: var(--rojo);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.precio-anterior {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.precio-actual {
+    color: var(--rojo);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+
 button {
-    background-color: white;
-    font-size: large;
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 10px;
+    background-color: var(--amarillo);
+    color: var(--texto);
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
-    background-color: yellowgreen;
+    background-color: #e6be35;
+    transform: scale(1.05);
 }
 
-.categorias {
-    place-items: center;
-    .card {
-        font-weight: bold;
 
-    }
-    .card:hover {
-        background-color: aquamarine;
-    }
+form {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.bienvenida, .categorias, .productos, .contacto {
-    place-items: center;
-    border-radius: 10px;
-    background-color: antiquewhite;
+input, textarea {
+    width: 100%;
     padding: 10px;
-    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--verde-principal);
+    box-shadow: 0 0 5px rgba(22, 138, 69, 0.5);
+}
+
+footer {
+    background-color: var(--texto);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    div.logo {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
 }
