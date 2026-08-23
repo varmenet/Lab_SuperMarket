@@ -1,12 +1,11 @@
-#PROYECTO DE PRACTICA DE DESARROLLO WEB BASANDOSE EN UNA PAGINA DE SUPERMERCADO
-##SUPERMARKET EXPRESS
+# Proyecto de práctica de desarrollo web basándose en una página de supermercado
+## SuperMarket Express
 
-##COMO EJECUTAR ESTA PAGINA
+## Cómo ejecutar esta página
 1. Descarga o clona este repositorio/carpeta.
 2. Abre el archivo `index.html` en tu navegador web de preferencia (Chrome, Edge, Firefox, Safari).
 
-
-##**ESTRUCTURA**
+## Estructura
 ```text
 SuperMarket/
 ├── index.html
