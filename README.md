@@ -7,20 +7,38 @@
 
 
 ##**ESTRUCTURA**
+```text
 SuperMarket/
 ├── index.html
+├── lacteos.html
+├── carnes.html
+├── frutas-verduras.html
+├── panaderia.html
+├── bebidas.html
+├── limpieza.html
 ├── css/
 │   └── style.css
 ├── img/
 │   ├── Supermercado_logo.jpg
-│   ├── leche.jpg
-│   ├── pan.jpg
-│   ├── huevos.jpg
 │   ├── arroz.jpg
+│   ├── artesanalpan.jpg
 │   ├── cereal.jpg
-│   ├── refresco.jpg
-│   ├── manzana.jpg
-│   ├── tomate.jpg
+│   ├── cloro.jpg
+│   ├── fabuloso.jpg
+│   ├── huevos.jpeg
+│   ├── huevos.jpg
+│   ├── laptopoferta.jpg
+│   ├── leche.jpg
 │   ├── lecheoferta.jpg
-│   └── laptopoferta.jpg
+│   ├── lechugaromana.jpg
+│   ├── manzana.jpg
+│   ├── mediosdias.jpg
+│   ├── milanesa.jpg
+│   ├── molida.jpg
+│   ├── pan.jpg
+│   ├── pinol.jpg
+│   ├── refresco.jpg
+│   ├── resfrescopec.jpg
+│   ├── rybye.jpg
+│   └── tomate.jpg
 └── README.md
